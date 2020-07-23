@@ -6,6 +6,7 @@ body {
 
 small {
     display: block;
+    font-size: 10px;
 }
 
 fieldset {
@@ -16,6 +17,58 @@ label {
     display: block;
 }
 
+.nav-wrapper {
+    width: 100vw;
+    height: max-content;
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sign-in-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.sign-in-info-box {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #505050;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.sign-in-info-box a {
+    color: #0077C5;
+    text-decoration: none;
+}
+
+.sign-in-info-box span {
+    display: block;
+}
+
+.sign-in-button-box {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    height: 24px;
+    padding: 5px 20px;
+    border: 1px solid #4c4c4c;
+    border-radius: 4px;
+    background: #0077C5;
+    color: white;
+    cursor: pointer;
+    font-size: 1.125em;
+    font-weight: normal;
+}
+
+sign-in {}
+
 .card-wrapper {
     display: block;
     margin-left: auto;
@@ -25,4 +78,21 @@ label {
     background-color: #fff;
     border: 1px solid #c7c7c7;
     border-radius: 2px;
+    font-size: 14px;
+    color: #4C4C4C;
+    text-align: center;
+}
+
+card-header h2 {
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: 24px;
+}
+
+label {
+    text-align: left;
+}
+
+input {
+    width: 100%;
 }

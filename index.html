@@ -1,107 +1,115 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Miklós Szilas">
-  <title>Intuit Accounts - Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Miklós Szilas">
+    <title>Intuit Accounts - Sign Up</title>
 
-  <link rel="icon" href="favicon.svg">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=AvenirNext&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.svg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=AvenirNext&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
-  <main>
 
-    <header>
-        <nav>
-          <div class="nav-wrapper">
-            <div class="login-info-box">
-              <span>Already have an Intuit account?</span>
-              <span><a href="#">I forgot my User ID or Password</a></span>
-            </div>
-            <div class="login-button-box">
-              <span class="button-icon"></span>
-              <span class="button">
-                <button type="submit" name="SignUp">Sign In</button>
-              </span>
-            </div>
-          </div>
-        </nav>
-    </header>
+    <main>
 
-    <section>
-      <header>
-        <div class="header-logo"></div>
-        <div class="header-icons">
-          <ul class="header-logo-list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </header>
-    </section>
+        <header>
+            <nav>
+                <div class="nav-wrapper">
 
-    <section>
-      <div class="card-wrapper">
-        <div class="card-header">
-          <h2>Create an Intuit account</h2>
-          <h3>One account for everything Intuit, including Mint.</h3>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="card-body">
-          <form id="mint-signup-form">
-            <fieldset>
-              <label for="email">E-mail address</label>
-              <input type="email" id="email" title="email">
-            </fieldset>
-            <fieldset>
-              <label for="phone">Phone (recommended)</label>
-              <input type="phone" id="phone" title="phone">
-              <small>Standard call, messaging or data rates may apply.</small>
-            </fieldset>
-            <fieldset>
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password">
-           </fieldset>
-            <div class="button" >
-              <span class="button-icon"></span>
-              <span class="button">
-                <button type="submit" name="SignUp">Create Account</button>
-              </span>
+                    <div class="sign-in-wrapper">
+                        <div class="sign-in-info-box">
+                            <div class="sign-in-message">
+                                <span>Already have an Intuit account?</span>
+                                <span><a href="#">I forgot my User ID or Password</a></span>
+                            </div>
+                        </div>
+
+                        <div class="sign-in-button-box">
+                            <button type="submit" name="SignUp">
+                              <span class="button-icon"></span>
+                              <span class="button sign-in">Sign In</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <header>
+                <div class="header-logo"></div>
+                <div class="header-icons">
+                    <ul class="header-logo-list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </header>
+        </section>
+
+        <section>
+            <div class="card-wrapper">
+                <div class="card-header">
+                    <h2>Create an Intuit account</h2>
+                    <h3>One account for everything Intuit, including Mint.</h3>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="card-body">
+                    <form id="mint-signup-form">
+                        <fieldset>
+                            <label for="email">E-mail address</label>
+                            <input type="email" id="email" title="email">
+                        </fieldset>
+                        <fieldset>
+                            <label for="phone">Phone (recommended)</label>
+                            <input type="phone" id="phone" title="phone">
+                            <small>Standard call, messaging or data rates may apply.</small>
+                        </fieldset>
+                        <fieldset>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </fieldset>
+                        <div class="button">
+                            <span class="button-icon"></span>
+                            <button type="submit" name="SignUp">Create Account</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="statement">
+                        <p>By clicking Create account, you agree to our<br>
+                            <a href="#">Terms</a> and have read and acknowledge our<a href="#">Privacy Statement.</a>
+                    </div>
+                    <div class="terms">
+                        <small>Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</small>
+                    </div>
+                </div>
             </div>
-          </form>
-        </div>
-        <div class="card-footer">
-          <div class="statement">
-            <p>By clicking Create account, you agree to our<br>
-            <a href="#">Terms</a> and have read and acknowledge our<a href="#">Privacy Statement.</a>
-          </div>
-          <div class="terms">
-            <small>Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</small>
-          </div>
-        </div>
-      </div>
-    </section>
-  
+        </section>
+    </main>
+
     <footer>
-      <div class="footer-wrapper">
-        <div class="footer-links"></div>
-        <div class="footer-message">
-          <p>© 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.<br>
-            Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
+        <div class="footer-wrapper">
+            <div class="footer-links"></div>
+            <div class="footer-message">
+                <p>© 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.<br> Terms and conditions, features, support, pricing, and service options subject to change without
+                    notice.
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="privacy-box">Privacy Settings</div>
+        <div class="privacy-box">Privacy Settings</div>
     </footer>
 
-  </main>
 </body>
 
 </html>
