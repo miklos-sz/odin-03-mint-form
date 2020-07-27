@@ -2,122 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Miklós Szilas">
-    <title>Intuit Accounts - Sign Up</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Miklós Szilas">
+		<title>Intuit Accounts - Sign Up</title>
 
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=AvenirNext&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="https://fonts.googleapis.com/css2?family=AvenirNext&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  
-  <header>
-    <nav>
-      <div class="nav-wrapper">
-        
-        <div class="sign-in-wrapper">
-          <div class="sign-in-info-box">
-              <div class="sign-in-message">
-                <span>Already have an Intuit account?</span>
-                <span><a href="#">I forgot my User ID or Password</a></span>
-              </div>
-          </div>
-          
-          <div class="sign-in-button-box">
-            <button type="submit" name="sign-in-button">
-                <span class="button-icon"></span>
-                <span class="button sign-in">Sign In</span>
-              </button>
-            </div>
-          </div>
-          
-        </div>
-      </nav>
-  </header>
-                  
-  <main>
-      <section>
-          <header>
-              <div class="header-logo"></div>
-              <div class="header-icons">
-                  <ul class="header-logo-list">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                  </ul>
-              </div>
-          </header>
-      </section>
+	
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				
+				<div class="sign-in-wrapper">
+					<div class="sign-in-info-box">
+							<div class="sign-in-message">
+								<span>Already have an Intuit account?</span>
+								<span><a href="#">I forgot my User ID or Password</a></span>
+							</div>
+					</div>
+					
+					<div class="sign-in-button-box">
+						<button type="submit" name="sign-in-button">
+								<span class="button-icon"></span>
+								<span class="button sign-in">Sign In</span>
+							</button>
+						</div>
+					</div>
+					
+				</div>
+			</nav>
+	</header>
+									
+	<main>
+			<section>
+					<header>
+							<div class="header-logo-box">
+									<div class="header-logo"></div>
+							</div>
+							<div class="header-icons">
+									<ul class="header-logo-list">
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+									</ul>
+							</div>
+					</header>
+			</section>
 
-      <section>
-          <div class="card-wrapper">
-              <div class="card-header">
-                  <h2>Create an Intuit account</h2>
-                  <p>One account for everything Intuit, including Mint. <a href="#">Learn more</a></p>
-                  
-              </div>
-              <div class="card-body">
-                  <form id="mint-signup-form">
-                      <fieldset>
-                          <label for="email">E-mail address</label>
-                          <input type="email" id="email" title="email">
-                          <div class="label-error"></div>
-                        </fieldset>
-                        <fieldset>
-                          <label for="phone">Phone (recommended)</label>
-                          <input type="phone" id="phone" title="phone">
-                          <small>Standard call, messaging or data rates may apply.</small>
-                          <div class="label-error"></div>
-                        </fieldset>
-                        <fieldset>
-                          <label for="password">Password</label>
-                          <input type="password" name="password" id="password">
-                          <div class="label-error"></div>
-                      </fieldset>
-                      <div class="button">
-                        <button type="submit" name="create-account">
-                          <span class="button-icon"></span>
-                          Create Account
-                          </button>
-                          </span>
-                      </div>
-                  </form>
-              </div>
+			<section>
+					<div class="card-wrapper">
+							<div class="card-header">
+									<h2>Create an Intuit account</h2>
+									<p>One account for everything Intuit, including Mint. <a href="#">Learn more</a></p>
+									<p id="sign-in-hidden-box">Already have an account? <a href="#">Sign In</a> </p>     
+							</div>
 
-                  <div class="statement">
-                      <p>By clicking Create account, you agree to our<br>
-                          <a href="#">Terms</a> and have read and acknowledge our<a href="#">Privacy Statement.</a>
-                  </div>
+							<div class="card-body">
+									<form id="mint-signup-form">
+											<fieldset>
+													<label for="email">E-mail address</label>
+													<input type="email" id="email" title="email">
+													<div class="label-error"></div>
+												</fieldset>
+												<fieldset>
+													<label for="phone">Phone (recommended)</label>
+													<input type="phone" id="phone" title="phone">
+													<small>Standard call, messaging or data rates may apply.</small>
+													<div class="label-error"></div>
+												</fieldset>
+												<fieldset>
+													<label for="password">Password</label>
+													<input type="password" name="password" id="password">
+													<div class="label-error"></div>
+											</fieldset>
+											<div class="button create-account">
+												<button type="submit" name="create-account">
+													<span class="button-icon"></span>
+													Create Account
+													</button>
+													</span>
+											</div>
+									</form>
+							</div>
 
-              </div>
-                  <div class="card-footer">
-                      <small>Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</small>
-                  </div>
-            </section>
-          </main>
-          
-  <footer>
-      <div class="footer-wrapper">
-          <div class="footer-links">
-            <a href="#">Legal</a>
-            <a href="#">Privacy</a>
-            <a href="#">Security</a>
-          </div>
-          <div class="footer-message">
-              <p>© 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.<br> Terms and conditions, features, support, pricing, and service options subject to change without
-                  notice.
-              </p>
-          </div>
-      </div>
-  </footer>
-  <div class="privacy-box">Privacy Settings</div>
+									<div class="statement">
+											<p>By clicking Create account, you agree to our<br>
+													<a href="#">Terms</a> and have read and acknowledge our <a href="#">Privacy Statement.</a>
+									</div>
+
+							</div>
+									<div class="card-footer">
+											<small>Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</small>
+									</div>
+						</section>
+					</main>
+					
+	<footer>
+			<div class="footer-wrapper">
+					<div class="footer-links">
+						<a href="#">Legal</a>
+						<a href="#">Privacy</a>
+						<a href="#">Security</a>
+					</div>
+					<div class="footer-message">
+							<p>© 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.<br> Terms and conditions, features, support, pricing, and service options subject to change without
+									notice.
+							</p>
+					</div>
+			</div>
+	</footer>
+	<div class="privacy-box">Privacy Settings</div>
 
 </body>
 

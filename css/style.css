@@ -15,6 +15,7 @@ small {
 }
 
 fieldset {
+    padding: 0 0 5px 0;
     border: none;
 }
 
@@ -33,6 +34,12 @@ label {
 .sign-in-wrapper {
     display: flex;
     flex-direction: row;
+}
+
+@media screen and (max-width:768px) {
+    .sign-in-wrapper {
+        display: none;
+    }
 }
 
 .sign-in-info-box {
@@ -74,15 +81,47 @@ button {
     font-size: 13.5px;
 }
 
+.create-account {
+    padding: 15px 0 20px 0;
+}
+
 
 .button-icon {
     width: 12px;
     height: 12px;
     margin: 2px 4px 0 0;
-    padding: 3px 10px 0 0;
     display: inline-block;
     background: center no-repeat url('../images/lock.png');
     background-size: contain;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo-box {
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    width: 118px;
+    height: 35px;
+    background-image: url('../images/intuit-logo-full.png');
+    width: ;
+}
+
+header ul {
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0 !important;
 }
 
 .card-wrapper {
@@ -103,6 +142,10 @@ button {
     box-sizing: border-box;
 }
 
+.card-header {
+    padding-bottom: 25px;
+}
+
 .card-header h2 {
     font-weight: 400;
     line-height: 1.1;
@@ -114,10 +157,24 @@ button {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.2;
+    text-align: center;
+    margin-bottom: 0 !important;
 }
 
 .card-header a {
     font-size: 12px;
+}
+
+#sign-in-hidden-box {
+    display: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+    #sign-in-hidden-box {
+        display: block;
+    }
 }
 
 .card-body small {
@@ -131,13 +188,14 @@ fieldset {
 }
 
 label {
+    height: 22px;
     text-align: left;
     padding: 0 0 6px;
 }
 
 .label-error {
     display: block;
-    min-height: 20px;
+    min-height: 24px;
 }
 
 input {
@@ -162,16 +220,17 @@ input {
     padding-top: 20px;
     font-size: 12px;
     font-style: italic;
-    line-height: 1.5;
+    line-height: 1.8;
     color: #757575;
 }
 
 .card-footer {
     width: 378px;
-    height: 60px;
+    height: 55px;
     display: block;
     margin: auto;
     background-color: #ECEEF1;
+    color: #8D9096;
     border-top: 0;
     border-right: 1px solid #c7c7c7;
     border-bottom: 1px solid #c7c7c7;
@@ -191,10 +250,14 @@ input {
     transform: translate(-50%, -50%) 
 }
 
+.footer-wrapper {
+    padding: 0 20px;
+}
+
 footer, footer a{
     font-size: 12px;
     text-align: center;
-    padding: 20px 0 0 0;
+    padding: 15px 0 0 10px;
     color: #505050;
     line-height: 1.5;
 }
@@ -208,6 +271,26 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.footer-wrapper {
-    padding: 0 20px;
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 2px 20px 20px 20px;
+}
+
+.privacy-box {
+    width: max-content;
+    height: max-content;
+    border-radius: 3px;
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    font-size: 14px;
+    color: #fff;
+    background: rgb(105, 105, 105);
+    margin: 0 15px;
+    padding: 14px 12px;
+    cursor: pointer;
 }
